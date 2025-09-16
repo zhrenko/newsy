@@ -8,4 +8,5 @@ req <- request("https://newsapi.org/v2/everything") |>
     apiKey = Sys.getenv("NEWS_API_KEY")
   )
 
+dir.create("~/misc/newsy/data/")
 req_perform(req, path = paste0("~/misc/newsy/data/", Sys.Date(), ".json"))

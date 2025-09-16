@@ -1,6 +1,6 @@
 name: scrape.yml
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:

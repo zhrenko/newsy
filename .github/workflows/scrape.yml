@@ -18,9 +18,6 @@ jobs:
       # Install R packages from files/DESCRIPTION
       - uses: r-lib/actions/setup-r-dependencies@v2
 
-      # # Ensure the directory exists before the R script tries to save to it
-      # - run: mkdir -p data
-
       # Execute the script
       - name: Run a script with a secret
         run: Rscript news_scrape.R
